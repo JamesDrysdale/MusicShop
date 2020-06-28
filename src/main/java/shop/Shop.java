@@ -21,6 +21,10 @@ public class Shop implements ISell {
         this.shopStock.add(instrument);
     }
 
+    public void removeStock(Instrument instrument){
+        this.shopStock.remove(instrument);
+    }
+
 
     @Override
     public double calculateMarkup(Instrument instrument) {
