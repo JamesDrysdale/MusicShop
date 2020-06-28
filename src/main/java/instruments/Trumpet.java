@@ -1,4 +1,4 @@
 package instruments;
 
-public class Trumpet {
+public class Trumpet extends Instrument{
 }
