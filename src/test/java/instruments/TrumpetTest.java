@@ -10,7 +10,7 @@ public class TrumpetTest {
 
     @Before
     public void before(){
-        trumpet = new Trumpet("Thomann TR 620S", "D", 4);
+        trumpet = new Trumpet("Thomann TR 620S", "C", "D", 4);
     }
 
     @Test
@@ -22,6 +22,10 @@ public class TrumpetTest {
     public void canSetNameOfTrumpet(){
         trumpet.setName("Mendini by Cecilo");
         assertEquals("Mendini by Cecilo", trumpet.getName());
+    }
+    @Test
+    public void trumpetHasAType(){
+        assertEquals("C", trumpet.getType());
     }
 
     @Test

@@ -10,7 +10,7 @@ public class SaxophoneTest {
 
     @Before
     public void before(){
-        saxophone = new Saxophone("Selmer Bass SA80", "A C B C A", 88);
+        saxophone = new Saxophone("Selmer Bass SA80", "Alto","A C B C A", 88);
     }
 
     @Test
@@ -22,6 +22,11 @@ public class SaxophoneTest {
     public void canSetSaxophoneName(){
         saxophone.setName("Yamaha YAS-62 Professional Alto");
         assertEquals("Yamaha YAS-62 Professional Alto", saxophone.getName());
+    }
+
+    @Test
+    public void saxophoneHasAType(){
+        assertEquals("Alto", saxophone.getType());
     }
 
     @Test

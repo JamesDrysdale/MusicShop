@@ -5,10 +5,12 @@ import behaviours.IPlay;
 public abstract class Instrument implements IPlay {
 
     private String name;
+    private String type;
     private String sound;
 
-    public Instrument (String name, String sound){
+    public Instrument (String name, String type, String sound){
         this.name = name;
+        this.type = type;
         this.sound = sound;
     }
 
@@ -18,6 +20,10 @@ public abstract class Instrument implements IPlay {
 
     public void setName(String name){
         this.name = name;
+    }
+
+    public String getType(){
+        return this.type;
     }
 
     public String makeSound(){

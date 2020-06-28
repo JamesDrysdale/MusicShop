@@ -10,7 +10,7 @@ public class PianoTest {
 
     @Before
     public void before(){
-        grandPiano = new Piano("Bechstein", "C D C", 88);
+        grandPiano = new Piano("Bechstein", "Concert Grand", "C D C", 88);
     }
 
     @Test
@@ -22,6 +22,11 @@ public class PianoTest {
     public void canSetPianoName(){
         grandPiano.setName("Fazioli");
         assertEquals("Fazioli", grandPiano.getName());
+    }
+
+    @Test
+    public void pianoHasAType(){
+        assertEquals("Concert Grand", grandPiano.getType());
     }
 
     @Test

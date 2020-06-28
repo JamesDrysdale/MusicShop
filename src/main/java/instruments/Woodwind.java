@@ -4,8 +4,8 @@ public abstract class Woodwind extends Instrument{
 
     private int holes;
 
-    public Woodwind(String name, String sound, int holes) {
-        super(name, sound);
+    public Woodwind(String name, String type, String sound, int holes) {
+        super(name, type, sound);
         this.holes = holes;
     }
 
