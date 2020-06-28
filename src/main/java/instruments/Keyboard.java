@@ -9,7 +9,11 @@ public abstract class Keyboard extends Instrument{
         this.keys = keys;
     }
 
-    public int keyCount(){
+    public int getKeys(){
         return this.keys;
+    }
+
+    public void setKeys(int keys){
+        this.keys = keys;
     }
 }

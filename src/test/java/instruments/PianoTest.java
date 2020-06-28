@@ -27,8 +27,14 @@ public class PianoTest {
     }
 
     @Test
-    public void aGrandPianoHas88keys(){
-        assertEquals(88, grandPiano.keyCount());
+    public void canGetHowManyKeysAKeyboardHas(){
+        assertEquals(88, grandPiano.getKeys());
+    }
+
+    @Test
+    public void canSetHowManyKeysAKeyboardHas(){
+        grandPiano.setKeys(97);
+        assertEquals(97, grandPiano.getKeys());
     }
 
 }
