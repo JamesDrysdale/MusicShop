@@ -2,8 +2,8 @@ package instruments;
 
 public class Guitar extends StringInstrument {
 
-    public Guitar(String sound, int strings){
-        super(sound, strings);
+    public Guitar(String name, String sound, int strings){
+        super(name, sound, strings);
     }
 
 }

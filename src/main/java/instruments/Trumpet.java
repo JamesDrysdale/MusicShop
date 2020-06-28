@@ -2,8 +2,8 @@ package instruments;
 
 public class Trumpet extends Brass{
 
-    public Trumpet(String sound, int valves){
-        super(sound, valves);
+    public Trumpet(String name, String sound, int valves){
+        super(name, sound, valves);
     }
 
 }

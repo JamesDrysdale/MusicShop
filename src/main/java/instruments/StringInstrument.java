@@ -4,8 +4,8 @@ public abstract class StringInstrument extends Instrument{
 
     private int strings;
 
-    public StringInstrument(String sound, int strings){
-        super(sound);
+    public StringInstrument(String name, String sound, int strings){
+        super(name, sound);
         this.strings = strings;
     }
 

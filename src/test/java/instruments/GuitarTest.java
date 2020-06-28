@@ -10,7 +10,12 @@ public class GuitarTest {
 
     @Before
     public void before(){
-        bassGuitar = new Guitar("C#", 4);
+        bassGuitar = new Guitar("Red Special","C#", 4);
+    }
+
+    @Test
+    public void aGuitarCanHaveAName(){
+        assertEquals("Red Special", bassGuitar.getName());
     }
 
     @Test
