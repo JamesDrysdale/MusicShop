@@ -27,10 +27,14 @@ public class GuitarTest {
     }
 
     @Test
-    public  void bassGuitarHas4Strings(){
-        assertEquals(4, bassGuitar.stringCount());
+    public void canGetTheNumberOfStringsOnAGuitar(){
+        assertEquals(4, bassGuitar.getStrings());
     }
 
-
+    @Test
+    public void canSetTheNumberofStringsOnAGuitar(){
+        bassGuitar.setStrings(5);
+        assertEquals(5, bassGuitar.getStrings());
+    }
 
 }

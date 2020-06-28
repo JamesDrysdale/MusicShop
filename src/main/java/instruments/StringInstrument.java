@@ -9,8 +9,12 @@ public abstract class StringInstrument extends Instrument{
         this.strings = strings;
     }
 
-    public int stringCount(){
+    public int getStrings(){
         return this.strings;
+    }
+
+    public void setStrings(int strings){
+        this.strings = strings;
     }
 
 }
