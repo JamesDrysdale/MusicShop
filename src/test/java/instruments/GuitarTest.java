@@ -69,4 +69,6 @@ public class GuitarTest {
         assertEquals(20, bassGuitar.getSellingPrice(), 0.02);
     }
 
+
+
 }
