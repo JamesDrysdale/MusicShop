@@ -20,7 +20,7 @@ public class SaxaphoneTest {
     }
 
     @Test
-    public void guitarCanChooseOtherSoundsToPlay(){
+    public void saxaphoneCanChooseOtherSoundsToPlay(){
         saxaphone.chooseSounds("A#");
         saxaphone.makeSound();
         assertEquals("A#", saxaphone.makeSound());

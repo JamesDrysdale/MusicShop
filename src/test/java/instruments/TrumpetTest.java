@@ -19,4 +19,11 @@ public class TrumpetTest {
         assertEquals("D", trumpet.play());
     }
 
+    @Test
+    public void trumpetCanChooseOtherSoundsToPlay(){
+        trumpet.chooseSounds("C");
+        trumpet.makeSound();
+        assertEquals("C", trumpet.makeSound());
+    }
+
 }
