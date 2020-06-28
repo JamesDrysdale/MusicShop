@@ -19,6 +19,12 @@ public class SaxophoneTest {
     }
 
     @Test
+    public void canSetSaxophoneName(){
+        saxophone.setName("Yamaha YAS-62 Professional Alto");
+        assertEquals("Yamaha YAS-62 Professional Alto", saxophone.getName());
+    }
+
+    @Test
     public void saxophoneCanPlaySound(){
         saxophone.play();
         assertEquals("A C B C A", saxophone.play());

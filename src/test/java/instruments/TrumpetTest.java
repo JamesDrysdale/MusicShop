@@ -19,6 +19,12 @@ public class TrumpetTest {
     }
 
     @Test
+    public void canSetNameOfTrumpet(){
+        trumpet.setName("Mendini by Cecilo");
+        assertEquals("Mendini by Cecilo", trumpet.getName());
+    }
+
+    @Test
     public void trumpetCanPlaySound(){
         trumpet.play();
         assertEquals("D", trumpet.play());

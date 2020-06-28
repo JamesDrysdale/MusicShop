@@ -19,6 +19,12 @@ public class GuitarTest {
     }
 
     @Test
+    public void canSetGuitarName(){
+        bassGuitar.setName("FrankenStrat");
+        assertEquals("FrankenStrat", bassGuitar.getName());
+    }
+
+    @Test
     public void guitarCanPlaySound(){
         bassGuitar.makeSound();
         assertEquals("C#", bassGuitar.makeSound());

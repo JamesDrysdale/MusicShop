@@ -19,6 +19,12 @@ public class PianoTest {
     }
 
     @Test
+    public void canSetPianoName(){
+        grandPiano.setName("Fazioli");
+        assertEquals("Fazioli", grandPiano.getName());
+    }
+
+    @Test
     public void pianoCanPlaySound(){
         grandPiano.makeSound();
         assertEquals("C D C", grandPiano.makeSound());
