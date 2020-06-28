@@ -30,6 +30,12 @@ public class GuitarTest {
     }
 
     @Test
+    public void canSetTypeOfGuitar(){
+        bassGuitar.setType("Electric");
+        assertEquals("Electric", bassGuitar.getType());
+    }
+
+    @Test
     public void guitarCanPlaySound(){
         bassGuitar.makeSound();
         assertEquals("C#", bassGuitar.makeSound());

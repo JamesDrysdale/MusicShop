@@ -30,6 +30,12 @@ public class SaxophoneTest {
     }
 
     @Test
+    public void canSetTypeOfSaxophone(){
+        saxophone.setType("Soprano");
+        assertEquals("Soprano", saxophone.getType());
+    }
+
+    @Test
     public void saxophoneCanPlaySound(){
         saxophone.play();
         assertEquals("A C B C A", saxophone.play());

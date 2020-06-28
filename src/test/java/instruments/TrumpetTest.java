@@ -29,6 +29,12 @@ public class TrumpetTest {
     }
 
     @Test
+    public void canSetTypeOfTrumpet(){
+        trumpet.setType("D");
+        assertEquals("D", trumpet.getType());
+    }
+
+    @Test
     public void trumpetCanPlaySound(){
         trumpet.play();
         assertEquals("D", trumpet.play());

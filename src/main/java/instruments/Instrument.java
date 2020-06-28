@@ -26,6 +26,10 @@ public abstract class Instrument implements IPlay {
         return this.type;
     }
 
+    public void setType(String type){
+        this.type = type;
+    }
+
     public String makeSound(){
         return sound;
     }

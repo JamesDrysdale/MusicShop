@@ -25,6 +25,12 @@ public class PianoTest {
     }
 
     @Test
+    public void canSetTypeOfPiano(){
+        grandPiano.setType("Electric Keyboard");
+        assertEquals("Electric Keyboard", grandPiano.getType());
+    }
+
+    @Test
     public void pianoHasAType(){
         assertEquals("Concert Grand", grandPiano.getType());
     }
