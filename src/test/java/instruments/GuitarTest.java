@@ -26,6 +26,11 @@ public class GuitarTest {
         assertEquals("B A D", bassGuitar.makeSound());
     }
 
+    @Test
+    public  void bassGuitarHas4Strings(){
+        assertEquals(4, bassGuitar.stringCount());
+    }
+
 
 
 }
