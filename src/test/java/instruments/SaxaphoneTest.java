@@ -10,13 +10,13 @@ public class SaxaphoneTest {
 
     @Before
     public void before(){
-        saxaphone = new Saxaphone();
+        saxaphone = new Saxaphone("A C B C A");
     }
 
     @Test
     public void saxaphoneCanPlaySound(){
-        saxaphone.play("A C B C A");
-        assertEquals("A C B C A", saxaphone.play("A C B C A"));
+        saxaphone.play();
+        assertEquals("A C B C A", saxaphone.play());
     }
 
 

@@ -10,13 +10,13 @@ public class GuitarTest {
 
     @Before
     public void before(){
-        bassGuitar = new Guitar();
+        bassGuitar = new Guitar("C#");
     }
 
     @Test
     public void guitarCanPlaySound(){
-        bassGuitar.play("C#");
-        assertEquals("C#", bassGuitar.play("C#"));
+        bassGuitar.makeSound();
+        assertEquals("C#", bassGuitar.makeSound());
     }
 
 

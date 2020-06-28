@@ -10,13 +10,13 @@ public class TrumpetTest {
 
     @Before
     public void before(){
-        trumpet = new Trumpet();
+        trumpet = new Trumpet("D");
     }
 
     @Test
     public void trumpetCanPlaySound(){
-        trumpet.play("D");
-        assertEquals("D", trumpet.play("D"));
+        trumpet.play();
+        assertEquals("D", trumpet.play());
     }
 
 }

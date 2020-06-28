@@ -10,13 +10,13 @@ public class PianoTest {
 
     @Before
     public void before(){
-        grandPiano = new Piano();
+        grandPiano = new Piano("C D C");
     }
 
     @Test
     public void pianoCanPlaySound(){
-        grandPiano.play("C D C");
-        assertEquals("C D C", grandPiano.play("C D C"));
+        grandPiano.makeSound();
+        assertEquals("C D C", grandPiano.makeSound());
     }
 
 }

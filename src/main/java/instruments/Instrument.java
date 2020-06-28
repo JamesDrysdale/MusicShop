@@ -4,8 +4,19 @@ import behaviours.IPlay;
 
 public abstract class Instrument implements IPlay {
 
-    public String play(String sound){
+    private String sound;
+
+    public Instrument (String sound){
+        this.sound = sound;
+    }
+
+    public String makeSound(){
         return sound;
     }
 
+
+    @Override
+    public String play(){
+        return sound;
+    }
 }
