@@ -15,9 +15,8 @@ public class TrumpetTest {
 
     @Test
     public void trumpetCanPlaySound(){
-        trumpet.play(){
-            assertEquals("D", trumpet.play("D"));
-        }
+        trumpet.play();
+        assertEquals("D", trumpet.play("D"));
     }
 
 }
