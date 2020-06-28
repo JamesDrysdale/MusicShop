@@ -19,6 +19,13 @@ public class GuitarTest {
         assertEquals("C#", bassGuitar.makeSound());
     }
 
+    @Test
+    public void guitarCanChooseOtherSoundsToPlay(){
+        bassGuitar.chooseSounds("B A D");
+        bassGuitar.makeSound();
+        assertEquals("B A D", bassGuitar.makeSound());
+    }
+
 
 
 }
