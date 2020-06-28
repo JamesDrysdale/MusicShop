@@ -6,11 +6,11 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 public class PianoTest {
-    PianoTest grandPiano;
+    Piano grandPiano;
 
     @Before
     public void before(){
-        grandPiano = new PianoTest();
+        grandPiano = new Piano();
     }
 
     @Test
