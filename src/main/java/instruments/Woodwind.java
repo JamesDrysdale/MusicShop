@@ -9,7 +9,11 @@ public abstract class Woodwind extends Instrument{
         this.holes = holes;
     }
 
-    public int holeCount(){
+    public int getHoles(){
         return this.holes;
+    }
+
+    public void setHoles(int holes){
+        this.holes = holes;
     }
 }

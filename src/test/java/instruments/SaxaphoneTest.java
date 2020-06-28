@@ -27,8 +27,14 @@ public class SaxaphoneTest {
     }
 
     @Test
-    public void canCountNumberOfHolesOnSaxaphone(){
-        assertEquals(88, saxaphone.holeCount());
+    public void canGetNumberOfHolesOnSaxaphone(){
+        assertEquals(88, saxaphone.getHoles());
+    }
+
+    @Test
+    public void canSetNumberOfHoleOnSaxaphone(){
+        saxaphone.setHoles(80);
+        assertEquals(80, saxaphone.getHoles());
     }
 
 
