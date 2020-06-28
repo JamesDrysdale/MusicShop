@@ -10,7 +10,7 @@ public class SaxaphoneTest {
 
     @Before
     public void before(){
-        saxaphone = new Saxaphone("A C B C A");
+        saxaphone = new Saxaphone("A C B C A", 88);
     }
 
     @Test
@@ -24,6 +24,11 @@ public class SaxaphoneTest {
         saxaphone.chooseSounds("A#");
         saxaphone.makeSound();
         assertEquals("A#", saxaphone.makeSound());
+    }
+
+    @Test
+    public void canCountNumberOfHolesOnSaxaphone(){
+        assertEquals(88, saxaphone.holeCount());
     }
 
 
