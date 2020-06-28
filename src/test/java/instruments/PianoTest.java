@@ -26,4 +26,9 @@ public class PianoTest {
         assertEquals("B", grandPiano.makeSound());
     }
 
+    @Test
+    public void aGrandPianoHas88keys(){
+        assertEquals(88, grandPiano.keyCount());
+    }
+
 }
