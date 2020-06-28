@@ -2,7 +2,14 @@ package instruments;
 
 public abstract class Woodwind extends Instrument{
 
-    public Woodwind(String sound) {
+    private int holes;
+
+    public Woodwind(String sound, int holes) {
         super(sound);
+        this.holes = holes;
+    }
+
+    public int holeCount(){
+        return this.holes;
     }
 }
