@@ -14,7 +14,7 @@ public class GuitarTest {
     }
 
     @Test
-    public void instrumentCanPlaySound(){
+    public void guitarCanPlaySound(){
         bassGuitar.play("C#");
         assertEquals("C#", bassGuitar.play("C#"));
     }
