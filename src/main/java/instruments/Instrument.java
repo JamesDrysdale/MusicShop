@@ -14,6 +14,10 @@ public abstract class Instrument implements IPlay {
         return sound;
     }
 
+    public void chooseSounds(String sound){
+        this.sound = sound;
+    }
+
 
     @Override
     public String play(){

@@ -19,4 +19,11 @@ public class PianoTest {
         assertEquals("C D C", grandPiano.makeSound());
     }
 
+    @Test
+    public void pianoCanChooseOtherSoundsToPlay(){
+        grandPiano.chooseSounds("B");
+        grandPiano.makeSound();
+        assertEquals("B", grandPiano.makeSound());
+    }
+
 }
