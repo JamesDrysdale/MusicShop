@@ -63,4 +63,9 @@ public class TrumpetTest {
         assertEquals(20, trumpet.getBuyingPrice(), 0.02);
     }
 
+    @Test
+    public void canGetSellingPriceOfTrumpet(){
+        assertEquals(60, trumpet.getSellingPrice(), 0.02);
+    }
+
 }

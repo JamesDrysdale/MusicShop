@@ -64,5 +64,10 @@ public class SaxophoneTest {
         assertEquals(45, saxophone.getBuyingPrice(), 0.02);
     }
 
+    @Test
+    public void canGetSellingPriceOfSaxophone(){
+        assertEquals(95, saxophone.getSellingPrice(), 0.02);
+    }
+
 
 }
