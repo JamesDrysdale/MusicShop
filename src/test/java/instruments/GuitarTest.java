@@ -10,7 +10,7 @@ public class GuitarTest {
 
     @Before
     public void before(){
-        bassGuitar = new Guitar("Red Special", "Bass", "C#", 4);
+        bassGuitar = new Guitar("Red Special", "Bass", "C#", 4, 10.00, 20.00);
     }
 
     @Test
@@ -57,6 +57,11 @@ public class GuitarTest {
     public void canSetTheNumberofStringsOnAGuitar(){
         bassGuitar.setStrings(5);
         assertEquals(5, bassGuitar.getStrings());
+    }
+
+    @Test
+    public void canGetBuyingPriceofGuitar(){
+        assertEquals(10, bassGuitar.getBuyingPrice(), 0.02);
     }
 
 }

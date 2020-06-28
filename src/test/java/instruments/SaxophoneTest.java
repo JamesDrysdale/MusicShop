@@ -10,7 +10,7 @@ public class SaxophoneTest {
 
     @Before
     public void before(){
-        saxophone = new Saxophone("Selmer Bass SA80", "Alto","A C B C A", 88);
+        saxophone = new Saxophone("Selmer Bass SA80", "Alto","A C B C A", 88, 45, 95);
     }
 
     @Test
@@ -57,6 +57,11 @@ public class SaxophoneTest {
     public void canSetNumberOfHoleOnSaxophone(){
         saxophone.setHoles(80);
         assertEquals(80, saxophone.getHoles());
+    }
+
+    @Test
+    public void canGetBuyingPriceofSaxophone(){
+        assertEquals(45, saxophone.getBuyingPrice(), 0.02);
     }
 
 

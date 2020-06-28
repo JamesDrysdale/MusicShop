@@ -10,7 +10,7 @@ public class PianoTest {
 
     @Before
     public void before(){
-        grandPiano = new Piano("Bechstein", "Concert Grand", "C D C", 88);
+        grandPiano = new Piano("Bechstein", "Concert Grand", "C D C", 88, 50, 200);
     }
 
     @Test
@@ -57,6 +57,11 @@ public class PianoTest {
     public void canSetHowManyKeysAKeyboardHas(){
         grandPiano.setKeys(97);
         assertEquals(97, grandPiano.getKeys());
+    }
+
+    @Test
+    public void canGetBuyingPriceofPiano(){
+        assertEquals(50, grandPiano.getBuyingPrice(), 0.02);
     }
 
 }

@@ -10,7 +10,7 @@ public class TrumpetTest {
 
     @Before
     public void before(){
-        trumpet = new Trumpet("Thomann TR 620S", "C", "D", 4);
+        trumpet = new Trumpet("Thomann TR 620S", "C", "D", 4, 20, 60);
     }
 
     @Test
@@ -56,6 +56,11 @@ public class TrumpetTest {
     public void canSetNumberOfValvesOnATrumpet(){
         trumpet.setValves(4);
         assertEquals(4, trumpet.getValves());
+    }
+
+    @Test
+    public void canGetBuyingPriceofTrumpet(){
+        assertEquals(20, trumpet.getBuyingPrice(), 0.02);
     }
 
 }

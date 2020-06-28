@@ -8,8 +8,8 @@ public class Shop implements ISell {
 
     @Override
     public double calculateMarkup(Instrument instrument) {
-        int buyingPrice = instrument.getBuyingValue();
-        int sellingPrice = instrument.getSellingPrice();
+        double buyingPrice = instrument.getBuyingPrice();
+        double sellingPrice = instrument.getSellingPrice();
         return sellingPrice - buyingPrice;
     }
 }
