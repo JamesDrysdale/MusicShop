@@ -1,4 +1,11 @@
 package instruments;
 
-public abstract class Instrument {
+import behaviours.IPlay;
+
+public abstract class Instrument implements IPlay {
+
+    public String play(String sound){
+        return sound;
+    }
+
 }
