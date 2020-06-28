@@ -9,8 +9,12 @@ public abstract class Brass extends Instrument{
         this.valves = valves;
     }
 
-    public int valveCount(){
+    public int getValves(){
         return this.valves;
+    }
+
+    public void setValves(int valves){
+        this.valves = valves;
     }
 
 }

@@ -27,8 +27,14 @@ public class TrumpetTest {
     }
 
     @Test
-    public void trumpetHas4Valves(){
-        assertEquals(4, trumpet.valveCount());
+    public void canGetNumberofValvesOnATrumpet(){
+        assertEquals(4, trumpet.getValves());
+    }
+
+    @Test
+    public void canSetNumberOfValvesOnATrumpet(){
+        trumpet.setValves(4);
+        assertEquals(4, trumpet.getValves());
     }
 
 }
