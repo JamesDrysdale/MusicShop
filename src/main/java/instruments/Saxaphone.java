@@ -1,4 +1,4 @@
 package instruments;
 
-public class Saxaphone {
+public class Saxaphone extends Instrument{
 }
