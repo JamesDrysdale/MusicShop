@@ -2,7 +2,14 @@ package instruments;
 
 public abstract class Keyboard extends Instrument{
 
-    public Keyboard(String sound){
+    private int keys;
+
+    public Keyboard(String sound, int keys){
         super(sound);
+        this.keys = keys;
+    }
+
+    public int keyCount(){
+        return this.keys;
     }
 }
