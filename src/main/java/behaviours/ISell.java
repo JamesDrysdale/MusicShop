@@ -4,6 +4,6 @@ import instruments.Instrument;
 
 public interface ISell {
 
-    public double calculateMarkup(Instrument instrument);
+    double calculateMarkup(Instrument instrument);
 
 }
